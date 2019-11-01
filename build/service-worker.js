@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/malihat/techdegree-project-7/precache-manifest.5bad5ba179e4b6cc40672ee0ed31bf82.js"
+  "/techdegree-project-7/precache-manifest.d1231c46546e158b2fa7d98d2b4d96c9.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/malihat/techdegree-project-7/index.html", {
+workbox.routing.registerNavigationRoute("/techdegree-project-7/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });

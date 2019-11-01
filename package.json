@@ -1,10 +1,8 @@
 {
   "name": "techdegree-project-7",
-  "homepage": "https://github.com/malihat/techdegree-project-7",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "gh-pages": "^2.1.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-router-dom": "^5.0.1",
@@ -14,9 +12,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"

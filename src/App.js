@@ -26,7 +26,7 @@ class App extends Component {
   // Fetches data from flickr api 
   doSearch = (search) => {
     let api = apiKey;
-    fetch(`https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=${api}&tags=${search}&per_page=24&format=json&nojsoncallback=1`)
+    fetch(`${"https://cors-anywhere.herokuapp.com/"}https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=${api}&tags=${search}&per_page=24&format=json&nojsoncallback=1`)
     .then(response => response.json())
     .then(resData => this.setState({ photos: resData.photos.photo}))
     .catch(err => {
