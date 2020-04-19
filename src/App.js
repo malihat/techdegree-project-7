@@ -7,7 +7,7 @@ import Nav from './Nav'
 import NotFound from './NotFound'
 import './newIndex.css';
 
-import apiKey from './config'
+// import apiKey from './config'
 
 class App extends Component {
   constructor() {
@@ -25,7 +25,7 @@ class App extends Component {
 
   // Fetches data from flickr api 
   doSearch = (search) => {
-    let api = apiKey;
+    let api = 'd91bf4e53ff342e8d2e94914fbedb327';
     fetch(`${"https://cors-anywhere.herokuapp.com/"}https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=${api}&tags=${search}&per_page=24&format=json&nojsoncallback=1`)
     .then(response => response.json())
     .then(resData => this.setState({ photos: resData.photos.photo}))
